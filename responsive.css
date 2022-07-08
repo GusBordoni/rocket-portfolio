@@ -1,0 +1,17 @@
+@media only screen and (max-width: 768px) {
+    body {
+        grid-template-areas: 
+            "aside"
+            "main"
+            "footer";
+        grid-template-rows: auto auto 50px;
+        grid-template-columns: 1fr;
+    }
+    aside {
+        padding-right: 37px;
+    }
+    .half-card {
+        width: 100%;
+        margin: 0;
+    }
+}
