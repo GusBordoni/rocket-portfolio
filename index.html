@@ -4,69 +4,182 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
     <title>Rocket Portfolio</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;500;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;700&display=swap');
     </style> 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
-    <aside>
-        <div class="card">1</div>
-        <div class="card">2</div>
-        <div class="card">3</div>
+    <aside class="flex-column">
+        <div class="card profile-card-1">
+            <img src="assets/profilepic.jpg" class="profilepic profilepic-main" alt="">
+            <span class="card-title">Gustavo Bordoni</span>
+            <span class="card-subtitle">Full Stack Developer</span>
+        </div>
+        <div class="card profile-card-2">
+            <a href="#">
+                <img src="assets/map-pin.svg" alt="">
+                <span>Brasil</span>
+            </a>
+            <a href="#">
+                <img src="assets/briefcase.svg" alt="">
+                <span>Unemployed</span>
+            </a>
+            <a href="#">
+                <img src="assets/github.svg" alt="">
+                <span>GusBordoni</span>
+            </a>
+            <a href="#">
+                <img src="assets/linkedin.svg" alt="">
+                <span>Gustavo Bordoni</span>
+            </a>
+            <a href="#">
+                <img src="assets/twitter.svg" alt="">
+                <span>GusBordoni</span>
+            </a>
+            <a href="#">
+                <img src="assets/globe.svg" alt="">
+                <span>http://gusbordoni.io</span>
+            </a>
+            <a href="#">
+                <img src="assets/mail.svg" alt="">
+                <span>gusbordoni.dev@gmail.com</span>
+            </a>
+        </div>
+        <div class="card">
+            <div class="card-title">Tecnologias</div>
+            <div class="profile-card-3">
+                <div class="tech">JAVA SCRIPT</div>
+                <div class="tech">HTML</div>
+                <div class="tech">CSS</div>
+                <div class="tech">REACTJS</div>
+                <div class="tech">GIT</div>
+                <div class="tech">GITHUB</div>
+                <div class="tech">NODEJS</div>
+                <div class="tech">PYTHON</div>
+                <div class="tech">ELIXIR</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">Experiências</div>
+            <div class="exp-card">
+                <ul>
+                    <li>Rocketseat
+                        2019 - Atualmente
+                        Community Experience
+                    </li>
+                    <li>Rocketseat
+                        2019 - Atualmente
+                        Community Experience
+                    </li>
+                    <li>Rocketseat
+                        2019 - Atualmente
+                        Community Experience
+                    </li>
+                    <li>Rocketseat
+                        2019 - Atualmente
+                        Community Experience
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">Educação</div>
+            <div class="edu-card">
+                <ul>
+                    <li>Rocketseat
+                        2019 - Atualmente
+                        Community Experience
+                    </li>
+                    <li>Rocketseat
+                        2019 - Atualmente
+                        Community Experience
+                    </li>
+                    <li>Rocketseat
+                        2019 - Atualmente
+                        Community Experience
+                    </li>
+                    <li>Rocketseat
+                        2019 - Atualmente
+                        Community Experience
+                    </li>
+                </ul>
+            </div>
+        </div>
     </aside>
     <main>
-        <div class="card">
-            <div class="card-header">
-                <span class="card-title">Título</span><span class="card-all">Ver todos</span>
+        <a href="#" class="project-links">
+            <div class="card flex-column">
+                <div class="card-header">
+                    <span class="card-title">My Projects</span><span class="card-all">Ver todos</span>
+                </div>
             </div>
-            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sollicitudin lobortis sapien.</p>
-            <div class="card-footer">
-                <span class="card-title">Stars</span><span class="card-all">Language</span>
-            </div> -->
+        </a>
+            <div class="card half-card flex-column">
+                <div class="card-header folder">
+                    <img src="assets/folder.svg" alt="">
+                    <span class="card-title">rocket-blog</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sollicitudin lobortis sapien.</p>
+                <div class="card-footer">
+                    <div class="points">
+                        <img src="/assets/star.svg" alt="">
+                        <span class="card-title">0</span>
+                        <img src="/assets/git-branch.svg" alt="">
+                        <span class="card-title">1</span>
+                    </div>
+                    <div class="lang-card">
+                        <div class="lang-bullet"></div>
+                        <span class="card-all">Java Script</span>
+                    </div>
+                </div>
         </div>
-        <div class="card half-card">
-            <div class="card-header">
-                <span class="card-title">Título</span><span class="card-all">Ver todos</span>
+        <div class="card half-card flex-column">
+            <div class="card-header folder">
+                <img src="assets/folder.svg" alt="">
+                <span class="card-title">rocket-coffee</span>
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sollicitudin lobortis sapien.</p>
             <div class="card-footer">
-                <span class="card-title">Stars</span><span class="card-all">Language</span>
+                <div class="points">
+                    <img src="/assets/star.svg" alt="">
+                    <span class="card-title">2</span>
+                    <img src="/assets/git-branch.svg" alt="">
+                    <span class="card-title">1</span>
+                </div>
+                <div class="lang-card">
+                    <div class="lang-bullet"></div>
+                    <span class="card-all">Java Script</span>
+                </div>
             </div>
         </div>
-        <div class="card half-card">
+        <div class="card flex-column">
             <div class="card-header">
-                <span class="card-title">Título</span><span class="card-all">Ver todos</span>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sollicitudin lobortis sapien.</p>
-            <div class="card-footer">
-                <span class="card-title">Stars</span><span class="card-all">Language</span>
+                <span class="card-title">Projetos Recentes</span>
             </div>
         </div>
-        <div class="card">
-            <div class="card-header">
-                <span class="card-title">Título</span><span class="card-all">Ver todos</span>
+        <div class="card grid-post">
+            <img src="assets/profilepic.jpg" class="profilepic post-pic" alt="">
+            <div class="post-title">
+                <span class="card-minor-title">Erro adb devices no Genymotion e Android Studio (React Native)</span>
+                <span class="card-date">2 anos atrás</span>
             </div>
-            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sollicitudin lobortis sapien.</p>
-            <div class="card-footer">
-                <span class="card-title">Stars</span><span class="card-all">Language</span>
-            </div> -->
-        </div>
-        <div class="card">
-            <div class="card-header">
-                <img src="" alt="">
-                <span class="card-title">Título</span><span class="card-all">Ver todos</span>
+            <div class="post-info">
+                <span>Erro adb devices no Genymotion e Android Studio (React Native)</span>
             </div>
-            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sollicitudin lobortis sapien.</p>
-            <div class="card-footer">
-                <span class="card-title">Stars</span><span class="card-all">Language</span>
-            </div> -->
+            <div class="post-techs">
+                <span>#react-native</span>                
+                <span>#java-script</span>                
+                <span>#html</span>                
+                <span>#css</span>                
+            </div>
         </div>
     </main>
     <footer>
-        footer
+        Made with 💜 by Gustavo.
     </footer>
 </body>
 </html>
