@@ -72,7 +72,8 @@ footer {
 }
 
 .half-card {
-    width: 48%;
+    width: 100%;
+    margin: 0;
 }
 
 .card p {
@@ -117,7 +118,7 @@ footer {
 
 
 .card-title {
-    font-size: 1.5em;
+    font-size: 1.45em;
     font-weight: 500;
     text-align: center;
 }
@@ -229,12 +230,12 @@ footer {
     display: flex;
     align-items: center;
     color: inherit;
-    transition: color 0.3s;
+    transition: color 0.2s;
 }
 
 .profile-card-2 > a:hover {
     color: var(--green-detail);
-    transition: color 0.3s;
+    transition: color 0.4s;
 }
 
 .profile-card-2 > a > span {
@@ -289,4 +290,53 @@ footer {
 
 .project-links:hover .card-all {
     color: var(--green-detail);
+}
+
+.rocket-project-link {
+    text-decoration: none;
+    color: inherit;
+    width: 47%;
+}
+
+
+#card3, #card4 {
+    visibility: collapse;
+    height: 0;
+    opacity: 0 !important;
+    top: -240px !important;
+    z-index: -1;
+    transition: opacity .2s, top .2s, visibility 1s !important;
+}
+
+#card3.change, #card4.change  {
+    visibility: visible;
+    height: unset;
+    opacity: 1 !important;
+    top: 0 !important;
+    transition: opacity 1s, top .5s !important;
+}
+
+.rocket-project-link #card1, .rocket-project-link #card2, .rocket-project-link #card3, .rocket-project-link #card4 {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0);
+    transition: border-color .2s, box-shadow .2s, left .2s, top .2s;
+    box-shadow: 6px 6px 2px rgba(0, 0, 0, 0.25);
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+.rocket-project-link:hover #card1, .rocket-project-link:hover #card2, .rocket-project-link:hover #card3, .rocket-project-link:hover #card4 {
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--green-detail);
+    transition: border-color .4s, box-shadow .4s, left .4s, top .4s;
+    box-shadow: 12px 12px 10px rgba(0, 0, 0, 0.15);
+    left: -1px;
+    top: -1px;
+}
+
+.rocket-project-link:hover #card1 > div > img, .rocket-project-link:hover #card1 > div > span, .rocket-project-link:hover #card2 > div > img, .rocket-project-link:hover #card2 > div > span, .rocket-project-link:hover #card3 > div > img, .rocket-project-link:hover #card3 > div > span, .rocket-project-link:hover #card4 > div > img, .rocket-project-link:hover #card4 > div > span {
+    filter: invert(73%) sepia(87%) saturate(4486%) hue-rotate(81deg) brightness(118%) contrast(121%);
 }
